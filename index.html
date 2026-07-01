@@ -2,10 +2,65 @@
 <html>
 <head>
   <title>My Portfolio</title>
+  <style>
+    /* รีเซ็ต Margin และ Padding พื้นฐาน */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* จัดเลย์เอาต์หลักของหน้าเว็บ */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* ฟอนต์สไตล์โมเดิร์น */
+      background: linear-gradient(135deg, #e0f2fe, #f0fdf4); /* พื้นหลังไล่สีอ่อนๆ ดูสบายตา */
+      color: #334155; /* สีตัวอักษรเทาเข้ม อ่านง่าย */
+      min-height: 100vh;
+      display: flex;
+      justify-content: center; /* จัดกึ่งกลางแนวนอน */
+      align-items: center;     /* จัดกึ่งกลางแนวตั้ง */
+      padding: 20px;
+    }
+
+    /* กล่องข้อความการ์ดโปรไฟล์ */
+    .portfolio-card {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 16px; /* ขอบมน */
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* เงาละมุนๆ ให้มิติ */
+      text-align: center;
+      max-width: 450px;
+      width: 100%;
+    }
+
+    /* หัวข้อใหญ่ */
+    h1 {
+      color: #0f172a;
+      font-size: 1.8rem;
+      margin-bottom: 24px;
+      line-height: 1.4;
+    }
+
+    /* ข้อความรายละเอียด */
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: #475569;
+    }
+
+    /* เน้นข้อความหัวข้อในย่อหน้า (ถ้ามี) */
+    p strong {
+      color: #2563eb; /* ไฮไลท์สีน้ำเงินแนว IT */
+    }
+  </style>
 </head>
 <body>
-  <h1>สวัสดีค่ะ ยินดีตอนรับสู่พอร์ตของศศินันทา</h1>
-  <p>ชื่อ-นามสกุล : ศศินันทา เกิดพงษ์</p>
-  <p>นักศึกษา : สาขาIT</p>
+
+  <div class="portfolio-card">
+    <h1>สวัสดีค่ะ ยินดีต้อนรับสู่พอร์ตของศศินันทา</h1>
+    <p><strong>ชื่อ-นามสกุล :</strong> ศศินันทา เกิดพงษ์</p>
+    <p><strong>นักศึกษา :</strong> สาขา IT</p>
+  </div>
+
 </body>
 </html>
